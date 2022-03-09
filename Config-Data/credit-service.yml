@@ -1,0 +1,13 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: service-credit
+  cloud:
+    config:
+      enabled: false
+  data:
+    mongodb:
+      database: MicroCredito
+      host: localhost
+      port: 27017

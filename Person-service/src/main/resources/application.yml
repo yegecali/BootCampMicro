@@ -1,0 +1,13 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: service-account
+  cloud:
+    config:
+      enabled: false
+  data:
+    mongodb:
+      database: MicroPersona
+      host: localhost
+      port: 27017

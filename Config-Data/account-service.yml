@@ -1,0 +1,10 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: service-account
+  data:
+    mongodb:
+      database: MicroCuenta
+      host: localhost
+      port: 27017
