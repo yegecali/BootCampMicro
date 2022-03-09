@@ -35,4 +35,20 @@ public class PersonServiceImpl implements IPersonService {
 		return _repo.findAll().filter(x -> x.getTipo().equals("business"));
 	}
 
+	@Override
+	public Mono<Persona> update(Persona person) {
+		 return _repo.save(person);
+	}
+
+	@Override
+	public void deleteById(String id) {
+		_repo.deleteById(id).subscribe();
+		
+	}
+
+	@Override
+	public Mono<Persona> findById(String id) {
+		return _repo.findById(id);
+	}
+
 }
