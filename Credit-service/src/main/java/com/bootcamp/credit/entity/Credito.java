@@ -28,7 +28,7 @@ public class Credito{
 		this.id = id;
 		this.tipo = tipo;
 		this.limiteCredito = limiteCredito;
-		this.saldo = this.limiteCredito;
+		this.saldo = limiteCredito;
 		this.idPersonas = new ArrayList<String>();
 	}
 	
